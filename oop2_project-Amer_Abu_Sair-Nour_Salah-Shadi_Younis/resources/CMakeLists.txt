@@ -1,0 +1,94 @@
+#maps
+configure_file ("easy_map.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("medium_map.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("hard_map.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("medium_map.json" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("easy_map.json" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("hard_map.json" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#screens
+configure_file ("help.jpg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("market.JPG" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Homepage.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("coins_market.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("chooseMap.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("pauseScreen.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("game_over.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("game_win.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Load_game.png" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#fonts
+configure_file ("myFont.otf" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#entities
+configure_file ("handGun_Move.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("rifle_move.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("shotgun_move.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("game_bullet.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("handGun_shoot.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("rifle_shoot.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("shotgun_shoot.png" ${CMAKE_BINARY_DIR} COPYONLY)
+#configure_file ("sniper_shoot.png" ${CMAKE_BINARY_DIR} COPYONLY)
+
+
+#gifts
+configure_file ("Health.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("DamageDownGift.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("EnemySpeedDownGift.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("SpeedUpGift.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("shield.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("spy.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("vision_up.png" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#statusbar
+configure_file ("kills.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("coins.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Levels.png" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#sound_effects
+configure_file ("Sounds/charcter_death.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/heartbeat_sound.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/footsteps.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+
+
+#sound effects for weapons
+configure_file ("Sounds/pistol_shot.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/shotgun_shot.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/AK47.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/sniper_shot.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#sound effects for gifts
+configure_file ("Sounds/speedup.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/speeddown.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/shield_sound.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/vision_up.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/hp_sound.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/spy.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#sound effects for menu
+configure_file ("Sounds/button_sound.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/game_begin.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/matchmaking_music.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/menu_music.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/background_game_play.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/coins-handling.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/gameover.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/gamewin.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("Sounds/senario.ogg" ${CMAKE_BINARY_DIR} COPYONLY)
+
+
+
+
+#buttons
+configure_file ("button.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("home.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("pause.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("soundon.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("soundoff.png" ${CMAKE_BINARY_DIR} COPYONLY)
+
+#guns
+configure_file ("basicGun.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("sniper.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("shotGun.png" ${CMAKE_BINARY_DIR} COPYONLY)
+configure_file ("rifle.png" ${CMAKE_BINARY_DIR} COPYONLY)
+

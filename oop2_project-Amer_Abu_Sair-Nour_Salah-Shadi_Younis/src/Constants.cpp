@@ -1,0 +1,75 @@
+﻿#include "Constants.h"
+#include "WeaponInc/HandGun.h"
+#include "WeaponInc/Rifle.h"
+#include "WeaponInc/Shotgun.h"
+#include "WeaponInc/Sniper.h"
+#include "ResourseInc/TextureManager.h"
+
+namespace Constants {
+	std::unordered_map<WeaponType, int> WeaponPrice = {
+		{ WeaponType::HandGun, 0 },
+		{ WeaponType::Rifle, 400 },
+		{ WeaponType::Shotgun, 100 },
+		{ WeaponType::Sniper, 300 }
+	};
+
+	std::unordered_map<LevelID, std::pair<std::string, sf::Color>> LevelNames = {
+		{ LevelID::EasyMap, {"Easy", sf::Color::Green} },
+		{ LevelID::MediumMap, {"Medium", sf::Color::Yellow} },
+		{ LevelID::HardMap, {"Hard", sf::Color::Red} }
+	};
+
+	std::unordered_map<GiftType, TextureID> GiftTextures = {
+		{ GiftType::ARMOR, TextureID::ARMOR },
+		{ GiftType::HEALTH, TextureID::HEALTH },
+		{ GiftType::ENEMYSPEEDDOWN, TextureID::ENEMYSPEEDDOWN },
+		{ GiftType::SPEEDUP, TextureID::SPEEDUP },
+		{ GiftType::SPY, TextureID::SPY },
+		{ GiftType::VISIONUP, TextureID::VISIONUP }
+	};
+
+	std::unordered_map<WeaponType, WeaponData> WeaponDataMap = {
+		{
+			WeaponType::HandGun,
+			{
+				[] { return std::make_unique<HandGun>(); },
+				AnimationInfo(TextureID::HANDGUNMOVE, {7, 3}, 0.3f),
+				AnimationInfo(TextureID::HANDGUNSHOOT, {1, 9}, 0.3f),
+				SoundID::PISTOLSOUND
+			}
+		},
+		{
+			WeaponType::Rifle,
+			{
+				[] { return std::make_unique<Rifle>(); },
+				AnimationInfo(TextureID::RIFLEMOVE, {3, 7}, 0.1f),
+				AnimationInfo(TextureID::RIFLESHOOT, {1, 9}, 0.1f),
+				SoundID::RIFLESOUND
+			}
+		},
+		{
+			WeaponType::Shotgun,
+			{
+				[] { return std::make_unique<Shotgun>(); },
+				AnimationInfo(TextureID::SHOTGUNMOVE, {3, 7}, 0.1f),
+				AnimationInfo(TextureID::SHOTGUNSHOOT, {1, 9}, 0.1f),
+				SoundID::SHOTGUNSOUND
+			}
+		},
+		{
+			WeaponType::Sniper,
+			{
+				[] { return std::make_unique<Sniper>(); },
+				AnimationInfo(TextureID::RIFLEMOVE, {3, 7}, 0.1f),
+				AnimationInfo(TextureID::RIFLESHOOT, {1, 9}, 0.1f),
+				SoundID::SNIPERSOUND
+			}
+		}
+	};
+
+	std::unordered_map <LevelID, TextureID> LevelTexture = {
+		{LevelID::EasyMap, TextureID::EASYMAP },
+		{ LevelID::MediumMap, TextureID::MEDIUMMAP },
+		{ LevelID::HardMap, TextureID::HARDMAP}
+	};
+}
